@@ -38,7 +38,7 @@ public class LoginTestCase extends Base {
 		loginPage = new LoginPage(driver);
 		loginPage.ToggleButton();
 		loginPage.performLogin();
-		loginPage.enterFormDetails("John Doe","ThisIsNotAPassword");
+		loginPage.enterFormDetails("","ThisIsNotAPassword");
 	}
 	@Test
 	public void makeAppointment() throws Exception {
@@ -46,7 +46,7 @@ public class LoginTestCase extends Base {
 		appointmentPage = new MakeAppointmentPage(driver);
 		appointmentPage.performFacility();
 		appointmentPage.performCalender();
-		appointmentPage.performTextArea("Testing!!");
+		appointmentPage.performTextArea("");
 		
 	}
 	@Test
